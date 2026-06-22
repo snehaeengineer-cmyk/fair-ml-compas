@@ -159,3 +159,4 @@ jupyter notebook FairML.ipynb
 This is an academic analysis only. Real criminal justice applications require deeper legal, ethical, and domain expert review.
 # fair-ml-compas
 # fair-ml-compas
+# fair-ml-compas
