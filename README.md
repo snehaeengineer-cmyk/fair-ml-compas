@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) tool was used in the US criminal justice system to estimate recidivism risk. ProPublica's 2016 investigation revealed significant racial disparities in its predictions — particularly higher false positive rates for African-American defendants.
 
@@ -19,7 +19,7 @@ This project:
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 ML_3/
@@ -44,7 +44,7 @@ ML_3/
 
 ---
 
-## ⚙️ Pipeline
+## Pipeline
 
 ```
 Raw COMPAS Data
@@ -76,7 +76,7 @@ Raw COMPAS Data
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Model Performance (Tuned)
 
@@ -97,7 +97,7 @@ Raw COMPAS Data
 | Gradient Boosting   | 0.1487    | -0.2786   | 0.2084    | 0.7649          | -0.2137   |
 | SVM                 | 0.1279    | -0.2310   | 0.1742    | 0.8092          | -0.1795   |
 
-### ✅ Final Model: Reweighed Gradient Boosting
+### Final Model: Reweighed Gradient Boosting
 
 | Metric              | COMPAS Baseline | Final Model |
 |---------------------|-----------------|-------------|
@@ -111,7 +111,7 @@ Raw COMPAS Data
 
 ---
 
-## 🔍 Key Concepts
+##  Key Concepts
 
 | Term | Definition |
 |------|-----------|
@@ -123,7 +123,7 @@ Raw COMPAS Data
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repo
 ```bash
@@ -145,7 +145,7 @@ jupyter notebook FairML.ipynb
 
 ---
 
-## 📚 References
+## References
 
 1. Angwin et al., "Machine Bias," ProPublica, 2016. https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing  
 2. Bellamy et al., "AI Fairness 360," arXiv:1810.01943, 2018.  
@@ -154,9 +154,10 @@ jupyter notebook FairML.ipynb
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This is an academic analysis only. Real criminal justice applications require deeper legal, ethical, and domain expert review.
+# fair-ml-compas
 # fair-ml-compas
 # fair-ml-compas
 # fair-ml-compas
