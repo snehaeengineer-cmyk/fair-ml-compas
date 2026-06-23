@@ -1,7 +1,7 @@
 # FairML: Classification and Fairness Analysis on the COMPAS Dataset
 # FairML COMPAS Analysis
 
-![Fairness Across the ML Pipeline](fair.jpg)
+![Fairness Across the ML Pipeline](fair.png)
 
 > **Can a recidivism prediction model be both accurate *and* fair?**  
 > This project trains five ML classifiers on the COMPAS dataset and uses AIF360 Reweighing to reduce racial bias — without sacrificing predictive performance.
