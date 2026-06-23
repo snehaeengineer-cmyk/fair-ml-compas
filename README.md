@@ -1,6 +1,11 @@
 # FairML: Classification and Fairness Analysis on the COMPAS Dataset
 # FairML COMPAS Analysis
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ![Fairness Across the ML Pipeline](fair.png)
 
 > **Can a recidivism prediction model be both accurate *and* fair?**  
