@@ -1,0 +1,12 @@
+Criterion,Value
+Selected Model,Gradient Boosting
+Training Method,Reweighed
+Accuracy,0.6533700137551581
+Precision,0.5960912052117264
+Recall,0.325044404973357
+F1-score,0.4206896551724138
+ROC-AUC,0.6769251624195378
+FPR Difference,0.0241395793499044
+FNR Difference,-0.070538958697401
+Selection Rate Difference,0.0529599729237384
+Fairness Gap Score,0.0492128369903479

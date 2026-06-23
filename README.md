@@ -22,20 +22,25 @@ This project:
 ## Repository Structure
 
 ```
+# Repository Structure
+
+```text
 ML_3/
-│
-├── FairML.ipynb                  # Main Jupyter notebook (full pipeline)
-│
+├── .gitignore                      # Excludes checkpoints and large raw data files
+├── README.md                       # Project documentation
+├── requirements.txt                # Python dependencies
+├── FairML.ipynb                    # Main Jupyter notebook (full ML & fairness pipeline)
 ├── data/
-│   ├── compas_clean.csv          # Cleaned & preprocessed dataset (409 KB)
-│   └── compas_model_encoded.csv  # Encoded dataset for modeling (770 KB)
-│
-├── results/                      # Generated CSVs (optional — notebook recreates these)
-│   ├── model_results_all_5_models.csv
-│   ├── tuned_model_results.csv
-│   ├── reweighed_model_results.csv
-│   ├── accuracy_fairness_tradeoff_analysis.csv
-│   └── ...
+│   ├── compas_clean.csv            # Cleaned & preprocessed COMPAS dataset
+│   └── compas_model_encoded.csv    # Encoded dataset ready for modeling
+└── results/                        # Generated evaluation metrics (recreated by the notebook)
+    ├── accuracy_fairness_tradeoff_analysis.csv
+    ├── final_fair_model_summary.csv
+    ├── model_results_all_5_models.csv
+    ├── model_selection_ranking.csv
+    ├── reweighed_model_results.csv
+    └── tuned_model_results.csv
+
 │
 ├── requirements.txt              # Python dependencies
 ├── .gitignore                    # Excludes checkpoints, large raw files
@@ -125,20 +130,70 @@ Raw COMPAS Data
 
 ##  Getting Started
 
-### 1. Clone the repo
+## Setup Instructions
+
+Follow these steps to set up the project environment and run the fairness analysis pipeline.
+
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/FairML-COMPAS.git
-cd FairML-COMPAS
+git clone https://github.com/snehaeengineer-cmyk/fair-ml-compas.git
+cd fair-ml-compas
 ```
 
-### 2. Install dependencies
+### 2. Set Up the Data
+
+Because the original raw dataset (`cox-violent-parsed.csv`) is too large to track in version control, you will need to download it manually.
+
+#### Steps
+
+1. Download the raw dataset from the official source.
+2. Create a local folder or keep it in your workspace directory as required by your environment paths.
+3. Place the downloaded file in the appropriate data directory used by the notebooks/scripts.
+
+> **Note:** The preprocessed datasets (`compas_clean.csv` and `compas_model_encoded.csv`) are already included in the `data/` directory and can be used directly for model training and evaluation.
+
+### 3. Install Dependencies
+
+It is recommended to use a virtual environment before installing the required packages.
+
+#### Create and Activate a Virtual Environment
+
+**macOS/Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### Install Required Packages
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the notebook
+### 4. Run the Analysis
+
+Launch Jupyter Notebook:
+
 ```bash
-jupyter notebook FairML.ipynb
+jupyter notebook
+```
+
+Open and execute the notebooks in the recommended order:
+
+1. Data Cleaning and Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Model Training and Evaluation
+4. Fairness Assessment and Bias Analysis
+
 ```
 
 > Run all cells in order. Charts and result CSVs are generated automatically.
