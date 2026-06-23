@@ -4,7 +4,8 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Coursework](https://img.shields.io/badge/TH--K%C3%B6ln-Master's-blue)
+
 
 ![Fairness Across the ML Pipeline](fair.png)
 
